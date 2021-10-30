@@ -1,4 +1,4 @@
-name: Laravel
+name: Laravel Testing workflow
 
 on:
   push:
