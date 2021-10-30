@@ -2,9 +2,9 @@ name: Laravel
 
 on:
   push:
-    branches: [ master, test ]
+    branches: [ test ]
   pull_request:
-    branches: [ master ]
+    branches: [ test ]
 
 jobs:
       
@@ -41,7 +41,7 @@ jobs:
 
           script: |
 
-            cd /var/www/html/laravel
+            cd /var/www/html/laravel2
 
             git checkout -f 
 
