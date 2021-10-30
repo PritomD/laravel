@@ -44,5 +44,5 @@ jobs:
             cd /var/www/html/laravel2
 
             git checkout -f 
-
-            git pull
+            
+            git pull https://github.com/PritomD/laravel test --allow-unrelated-histories
