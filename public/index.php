@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+echo "this file is not suppossed to be COPIED ANYWHERE";
+
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
