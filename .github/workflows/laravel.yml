@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 #   pull_request:
 #     branches: [ master ]
-# test
+# test --exclude="public/index.php"
 
 jobs:
       
@@ -22,7 +22,7 @@ jobs:
 
         uses: burnett01/rsync-deployments@5.1
         with:
-          switches: -avzr --delete --exclude=".git" --exclude=".github" --exclude="public/index.php"
+          switches: -avzr --delete --exclude=".git" --exclude=".github" 
           path: ./
           remote_path: /var/www/html/laravel-app
           remote_host: ${{ secrets.SSH_HOST }}
